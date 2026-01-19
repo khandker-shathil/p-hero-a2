@@ -1,2 +1,6 @@
 @import "tailwindcss";
 
+/* @theme {
+    --color-bgcolor: #1A0B2E;
+} */ 
+/* CSS @theme is not being recognised */

@@ -6,10 +6,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>TechWave (P-Hero-A2)</title>
 </head>
-<body>
-    <header>
-        <nav class="flex font-sans ml-52 mr-52 mt-8 mb-8 border border-solid justify-between items-center">
-            <h1 class="text-3xl">Tech<span class="font-bold bg-clip-text text-transparent bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Wave</span></h1>
+<body class="m-0 p-0">
+    <!-- Header -->
+    <header class="bg-[#1A0B2E] w-[1600px] h-[92px]">
+        <nav class="flex font-sans ml-52 mr-52 mb-8 p-8 justify-between items-center">
+            <h1 class="text-3xl text-white">Tech<span class="font-bold bg-clip-text text-transparent bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Wave</span></h1>
             <ul class="flex items-center gap-8 text-white">
                 <li class="nav-link">About</li>
                 <li class="nav-link">Episodes</li>
@@ -18,5 +19,19 @@
             <button class="flex items-center gap-1.5 p-3 rounded-[62.5rem] text-white bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Subscribe<img src="./images/ArrowRight.png" alt="Arrow Vector"></button>
         </nav>
     </header>
+    <!-- Banner -->
+    <section class="w-[1600px] h-[760px] flex relative justify-center">
+            <img src="./images/hero-bg.png" alt="Banner Background">
+            <div class=" card-cont mt-[101px] flex flex-col justify-center items-center absolute gap-5">
+                <img src="/images/hero-circle.png" alt="hero circle">
+                <img class="absolute top-16" src="/images/microphone.png" alt="microphone icon">
+                 <p class="font-extrabold text-white text-6xl">TechWave</p>
+                 <p class="text-white text-base font-thin">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                 <div class="btn flex gap-2">
+                    <button class="flex justify-center items-center gap-4 h-11 w-[201px] text-sm text-white rounded-4xl bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%"><img src="/images/spotify.png">Listen to Spotify</button>
+                    <button class="flex justify-center items-center gap-4 h-11 w-[147px] bg-green-500 rounded-4xl text-sm bg-clip-text text-transparent border border-green-500 "><img src="./images/message.png">Subscribe</button>
+                 </div>
+            </div>
+        </section>
 </body>
 </html>
