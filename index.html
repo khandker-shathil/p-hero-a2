@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>TechWave (P-Hero-A2)</title>
 </head>
@@ -49,7 +50,7 @@
     </section>
     <!-- Grid Layout -->
      <section class="grid-lay text-amber-50 bg-[#1A0B2E] pl-52 pr-52 pt-32 pb-32">
-        <h1 class="text-5xl font-bold mb-4 text-center">Why Choose TechWave</h1>
+        <h1 class="text-4xl font-bold mb-4 text-center">Why Choose TechWave</h1>
         <div class="grid grid-rows-3  gap-6 grid-cols-3">
             <div class="cards rounded-4xl bg-[#351165]/40 p-5  row-span-2"><img src="./images/headphone.png" alt="One"><h1 class=" mt-4 text-2xl font-bold">Premium Audio Quality</h1><p class=" mt-4 text-sm opacity-60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p></div>
             <div class="cards rounded-4xl bg-[#351165]/40 p-5  col-span-2"><img src="./images/device.png" alt="One"><h1 class=" mt-4 text-2xl font-bold">Mobile Friendly</h1><p class="mt-4 text-sm opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p></div>
@@ -58,7 +59,46 @@
             <div class="cards rounded-4xl bg-[#351165]/40 p-5 "><img src="./images/resource.png" alt="One"><h1 class="mt-4 text-2xl font-bold">Rich Resources</h1><p class="mt-4 text-sm opacity-60">Access show notes, transcripts, and additional learning materials for every episode.</p></div>
         </div>
      </section>
-
-    
+     <!--Featured Episodes-->
+    <section class="w-auto bg-[#1A0B2E]">
+        <h1 class="text-4xl font-bold text-center text-white mb-10">Featured Episodes</h1>
+        <div class="card  flex justify-center items-center gap-7">
+        <div class="cards rounded-4xl  bg-[#351165]/40 text-white relative"><a class="absolute flex justify-center items-center w-14 h-14 rounded-full bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90% top-16 left-24" href="https://youtu.be/dQw4w9WgXcQ?si=gqKZldOncJSfoceY" target="_blank"><img src="./images/ArrowRight.png" alt=""></a><img class="rounded-2xl" src="./images/rick.jpg" alt="Rick Roll Podcast"><h1 class="text-2xl font-bold p-2">Why Rick is Rolling</h1><p class="text-sm opacity-60 p-2">Explore the meme behind Rick Rolling.</p><p class="flex gap-2 items-center text-[#00FF88] p-2"><img src="./images/clock.png" alt="clock png">51min</p></div>
+        <div class="cards rounded-4xl  bg-[#351165]/40 text-white relative"><a class="absolute flex justify-center items-center w-14 h-14 rounded-full bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90% top-16 left-24" href="https://youtu.be/APgMe8E7DB0?si=jzoqWOb0QEk771ze" target="_blank"><img src="./images/ArrowRight.png" alt=""></a><img class="rounded-2xl" src="./images/aura.jpg" alt="Aura Farming Podcast"><h1 class="text-2xl font-bold p-2">Meet The Aura Farmers</h1><p class="text-sm opacity-60 p-2">Explore the Aura Farmers</p><p class="flex gap-2 items-center text-[#00FF88] p-2"><img src="./images/clock.png" alt="clock png">51min</p></div>
+        <div class="cards rounded-4xl  bg-[#351165]/40 text-white relative"><a class="absolute flex justify-center items-center w-14 h-14 rounded-full bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90% top-16 left-24" href="https://youtu.be/HmIMmFAV4BY?si=Ss7WUpzPwbe1eQ-t" target="_blank"><img src="./images/ArrowRight.png" alt=""></a><img class="rounded-2xl" src="./images/tung.jpg" alt="Tung Tung Sahur Podcast"><h1 class="text-2xl font-bold p-2">Tung Tung Sahur Podcast</h1><p class="text-sm opacity-60 p-2">Tung Tung in the studio</p><p class="flex gap-2 items-center text-[#00FF88] p-2"><img src="./images/clock.png" alt="clock png">51min</p></div>     
+        </div>
+    </section>
+    <!--Meet the Host-->
+    <section class="w-auto bg-[#1A0B2E] text-white pl-52 pr-52 pt-32 pb-32">
+        <h1 class=" text-4xl font-bold mb-4 text-center pb-2">Meet The Host</h1>
+        <div class="parent-card  p-5 rounded-4xl bg-[#351165]/40">
+            <div class="card flex justify-center items-center">
+                <img class="p-4" src="./images/host.png" alt="Pic of Host">
+                <div class="">
+                    <h1 class="text-3xl pt-2.5 pl-3">Alex Kumar</h1>
+                    <p class="text-sm opacity-60 pt-2.5 pl-3">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                    <div class="link flex items-center pt-2.5 pl-3 gap-3">    
+                        <img src="./images/linkedin.png" alt="linkedin">
+                        <img src="./images/x.png" alt="Twitter">
+                        <img src="./images/youtube.png" alt="YouTube">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+     <section class="relative bg-[url('./images/footer-bg.png')] h-[412px]">
+        <div class="card flex flex-col justify-center items-center text-white">
+            <h1 class="text-8xl mt-20">Tech<span class="bg-clip-text text-transparent bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Wave</span></h1>
+            <div class="link flex text-sm items-center gap-2 mt-9">
+                <div class="link flex items-center gap-4 "><img src="./images/spotify.png" alt=""><p class="text-sm opacity-60">Spotify</p></div>
+                <div class="link flex items-center gap-4"><img src="./images/apple-podcast.png" alt=""><p class="text-sm opacity-60">Apple Podcasts</p></div>
+                <div class="link flex items-center gap-4"><img src="./images/youtube-podcast.png" alt=""><p class="text-sm opacity-60">YouTube</p></div>
+                <div class="link flex items-center gap-4"><img src="./images/twitter.png" alt=""><p class="text-sm opacity-60">Twitter</p></div>
+            </div>
+            <p class="mt-8 text-sm opacity-60">© 2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+     </section>
 </body>
 </html>
