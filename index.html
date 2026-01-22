@@ -7,51 +7,58 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>TechWave (P-Hero-A2)</title>
 </head>
-<body class="m-0 p-0 w-[1600px]">
+<body class="m-0 p-0 w-full">
     <!-- Header -->
-    <header class="bg-[#1A0B2E] ">
-        <nav class="flex font-sans ml-52 mr-52 p-8 justify-between items-center">
-            <h1 class="text-3xl text-white">Tech<span class="font-bold bg-clip-text text-transparent bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Wave</span></h1>
-            <ul class="flex items-center gap-8 text-white">
+    <header class="bg-[#1A0B2E]">
+        <nav class="flex items-center justify-between p-8 lg:pl-52 lg:pr-52">
+            <h1 class="text-2xl lg:text-3xl text-white font-extrabold">
+                Tech<span class="font-bold bg-clip-text text-transparent bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Wave</span></h1>
+            <ul class="hidden lg:flex items-center gap-8 text-white">
                 <li class="nav-link">About</li>
                 <li class="nav-link">Episodes</li>
                 <li class="nav-link">Host</li>
             </ul>
-            <button class="flex items-center gap-1.5 p-3 rounded-[62.5rem] text-white bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Subscribe<img src="./images/ArrowRight.png" alt="Arrow Vector"></button>
+            <button class="hidden lg:flex items-center gap-1.5 p-3 rounded-full text-white bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Subscribe<img src="./images/ArrowRight.png" alt="Arrow Vector"></button>
+            <button class="lg:hidden"><img src="./images/hamburger-menu.png" alt="Menu" class="w-8 h-8"></button>
         </nav>
     </header>
     <!-- Banner -->
-    <section class="flex relative justify-center">
-            <img src="./images/hero-bg.png" alt="Banner Background">
-            <div class=" card-cont mt-[101px] flex flex-col justify-center items-center absolute gap-5">
-                <img src="./images/hero-circle.png" alt="hero circle">
-                <img class="absolute top-16" src="./images/microphone.png" alt="microphone icon">
-                 <p class="font-extrabold text-white text-6xl">TechWave</p>
-                 <p class="text-white text-base font-thin">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                 <div class="btn flex gap-2">
-                    <button class="flex justify-center items-center gap-4 h-11 w-[201px] text-sm text-white rounded-4xl bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%"><img src="./images/spotify.png">Listen to Spotify</button>
-                    <button class="flex justify-center items-center gap-4 h-11 w-[147px] bg-green-500 rounded-4xl text-sm bg-clip-text text-transparent border border-green-500 "><img src="./images/message.png">Subscribe</button>
-                 </div>
-            </div>
+   <section class="bg-[url('./images/hero-bg.png')] bg-cover bg-center flex flex-col items-center justify-center">
+                <div class="">
+                    <div class="flex flex-col items-center justify-center" >
+                        <img class="" src="./images/hero-circle.png" alt="hero circle">
+                        <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./images/microphone.png" alt="microphone icon">
+                        </div>
+                        <div class="pt-5 flex flex-col gap-4 justify-center items-center pb-5">
+                        <p class="font-extrabold text-white text-6xl">TechWave</p>
+                        <p class="text-white text-base font-thin">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="btn flex gap-2">
+                            <button class="flex justify-center items-center gap-4 h-11 w-[201px] text-sm text-white rounded-4xl bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%"><img src="./images/spotify.png">Listen to Spotify</button>
+                            <button class="flex justify-center items-center gap-4 h-11 w-[147px] bg-green-500 rounded-4xl text-sm bg-clip-text text-transparent border border-green-500 "><img src="./images/message.png">Subscribe</button>
+                        </div>
+                        </div>
+                </div>
     </section>
     <!-- About The Podcast -->
-     <section class=" w-auto bg-[#1A0B2E] text-white flex flex-col items-center justify-center gap-2">
+     <section class="w-auto bg-[#1A0B2E] text-white flex flex-col items-center justify-center gap-2 pt-10">
+        <div class="text-container flex flex-col items-center justify-center lg:pl-52 lg:pr-52">
         <h1 class="text-5xl font-bold">About the Podcast</h1>
-        <p class="tex-sm text-center pl-52 pr-52">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+        <p class="tex-sm text-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
         We break down complex topics into digestible insights, explore productivity strategies that actually work,
         and share stories of personal growth from industry leaders.</p>
         <p class="text-center mt-4">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>   
-        <div class="c flex gap-24 mt-20">
-            <div class="cards"><h1 class="text-5xl text-[#00FF88]">150k+</h1><p class="mt-4">MONTHLY LISTENERS</p></div>
-            <div class="cards"><h1 class="text-5xl text-[#00FF88]">200K+</h1><p class="mt-4">EPISODES PUBLISHED</p></div>
-            <div class="cards"><h1 class="text-5xl text-[#00FF88]">4.9</h1><p class="mt-4">AVERAGE RATING</p></div>
-            <div class="cards"><h1 class="text-5xl text-[#00FF88]">50+</h1><p class="mt-4">INDUSTRY RATES</p></div>
-        </div>
+        </div>    
+        <div class="c grid grid-cols-2 grid-rows-2 lg:flex flex-row gap-24 mt-20">
+                <div class="cards"><h1 class="text-5xl text-[#00FF88]">150k+</h1><p class="mt-4">MONTHLY LISTENERS</p></div>
+                <div class="cards"><h1 class="text-5xl text-[#00FF88]">200K+</h1><p class="mt-4">EPISODES PUBLISHED</p></div>
+                <div class="cards"><h1 class="text-5xl text-[#00FF88]">4.9</h1><p class="mt-4">AVERAGE RATING</p></div>
+                <div class="cards"><h1 class="text-5xl text-[#00FF88]">50+</h1><p class="mt-4">INDUSTRY RATES</p></div>
+            </div>
     </section>
     <!-- Grid Layout -->
-     <section class="grid-lay text-amber-50 bg-[#1A0B2E] pl-52 pr-52 pt-32 pb-32">
+     <section class="grid-lay text-amber-50 bg-[#1A0B2E] pt-32 lg:pl-52 lg:pr-52 lg:pt-32 lg:pb-32">
         <h1 class="text-4xl font-bold mb-4 text-center">Why Choose TechWave</h1>
-        <div class="grid grid-rows-3  gap-6 grid-cols-3">
+        <div class="flex flex-col gap-6 pl-5 pr-5 lg:grid lg:grid-rows-3  lg:gap-6 grid-cols-3">
             <div class="cards rounded-4xl bg-[#351165]/40 p-5  row-span-2"><img src="./images/headphone.png" alt="One"><h1 class=" mt-4 text-2xl font-bold">Premium Audio Quality</h1><p class=" mt-4 text-sm opacity-60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p></div>
             <div class="cards rounded-4xl bg-[#351165]/40 p-5  col-span-2"><img src="./images/device.png" alt="One"><h1 class=" mt-4 text-2xl font-bold">Mobile Friendly</h1><p class="mt-4 text-sm opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p></div>
             <div class="cards rounded-4xl bg-[#351165]/40 p-5  col-span-2"><img src="./images/location.png" alt="One"><h1 class="mt-4 text-2xl font-bold">Global Community</h1><p class="mt-4 text-sm opacity-60">Connect with tech enthusiasts from over 120 countries worldwide.</p></div>
@@ -62,14 +69,14 @@
      <!--Featured Episodes-->
     <section class="w-auto bg-[#1A0B2E]">
         <h1 class="text-4xl font-bold text-center text-white mb-10">Featured Episodes</h1>
-        <div class="card  flex justify-center items-center gap-7">
+        <div class="card flex flex-col lg:flex-row justify-center items-center gap-7">
         <div class="cards rounded-4xl  bg-[#351165]/40 text-white relative"><a class="absolute flex justify-center items-center w-14 h-14 rounded-full bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90% top-16 left-24" href="https://youtu.be/dQw4w9WgXcQ?si=gqKZldOncJSfoceY" target="_blank"><img src="./images/ArrowRight.png" alt=""></a><img class="rounded-2xl" src="./images/rick.jpg" alt="Rick Roll Podcast"><h1 class="text-2xl font-bold p-2">Why Rick is Rolling</h1><p class="text-sm opacity-60 p-2">Explore the meme behind Rick Rolling.</p><p class="flex gap-2 items-center text-[#00FF88] p-2"><img src="./images/clock.png" alt="clock png">51min</p></div>
         <div class="cards rounded-4xl  bg-[#351165]/40 text-white relative"><a class="absolute flex justify-center items-center w-14 h-14 rounded-full bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90% top-16 left-24" href="https://youtu.be/APgMe8E7DB0?si=jzoqWOb0QEk771ze" target="_blank"><img src="./images/ArrowRight.png" alt=""></a><img class="rounded-2xl" src="./images/aura.jpg" alt="Aura Farming Podcast"><h1 class="text-2xl font-bold p-2">Meet The Aura Farmers</h1><p class="text-sm opacity-60 p-2">Explore the Aura Farmers</p><p class="flex gap-2 items-center text-[#00FF88] p-2"><img src="./images/clock.png" alt="clock png">51min</p></div>
         <div class="cards rounded-4xl  bg-[#351165]/40 text-white relative"><a class="absolute flex justify-center items-center w-14 h-14 rounded-full bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90% top-16 left-24" href="https://youtu.be/HmIMmFAV4BY?si=Ss7WUpzPwbe1eQ-t" target="_blank"><img src="./images/ArrowRight.png" alt=""></a><img class="rounded-2xl" src="./images/tung.jpg" alt="Tung Tung Sahur Podcast"><h1 class="text-2xl font-bold p-2">Tung Tung Sahur Podcast</h1><p class="text-sm opacity-60 p-2">Tung Tung in the studio</p><p class="flex gap-2 items-center text-[#00FF88] p-2"><img src="./images/clock.png" alt="clock png">51min</p></div>     
         </div>
     </section>
     <!--Meet the Host-->
-    <section class="w-auto bg-[#1A0B2E] text-white pl-52 pr-52 pt-32 pb-32">
+    <section class="w-auto bg-[#1A0B2E] text-white pb-10 pl-16 pr-16 lg:pl-52 lg:pr-52 lg:pt-32 lg:pb-32">
         <h1 class=" text-4xl font-bold mb-4 text-center pb-2">Meet The Host</h1>
         <div class="parent-card  p-5 rounded-4xl bg-[#351165]/40">
             <div class="card flex justify-center items-center">
@@ -88,7 +95,7 @@
         </div>
     </section>
     <!-- Footer -->
-     <section class="relative bg-[url('./images/footer-bg.png')] h-[412px]">
+     <section class="relative bg-[url('./images/footer-bg.png')] bg-center pb-10">
         <div class="card flex flex-col justify-center items-center text-white">
             <h1 class="text-8xl mt-20">Tech<span class="bg-clip-text text-transparent bg-linear-to-tr from-amber-300 from-10% via-fuchsia-600 via-70% to-purple-600 to-90%">Wave</span></h1>
             <div class="link flex text-sm items-center gap-2 mt-9">
